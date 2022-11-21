@@ -9,6 +9,7 @@ def test_agreement():  # 登录页查看用户协议和隐私政策
                             headers=header)
     assert "隐私政策" in response.content.decode("utf-8")
 
+#正确用户名和密码
 
 def test_phone_empty():  # 手机号为空，返回200
     """
